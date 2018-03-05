@@ -11,7 +11,7 @@
 				{{#unless devoured}}
 				<form action = "burger/eat/{{id}}" method = "POST">
 					<div class = "input-group">
-						<li class = "form-control">{{id}}. {{burger_name}}</li>
+						<li class = "form-control">{{burger_name}}</li>
 							<span class = "input-group-btn">
 								<button class = "btn btn-success devour-button" type = "submit"> DEVOUR IT!</button>
 							</span>
@@ -30,7 +30,7 @@
 			{{#each burgers}}
 				{{#if this.devoured}}
 					<div class="input-group">
-						<li class = "form-control">{{this.id}}. {{this.burger_name}}</li>
+						<li class = "form-control">{{this.burger_name}}</li>
 					</div>
 				{{/if}}
 			{{/each}}
